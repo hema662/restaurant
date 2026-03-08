@@ -19,31 +19,31 @@ body {
 }
 /* fresh */
 @media (max-width: 767px) {
-    .container-one {
+    .container-oe {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 768px) {
-    .container-one {
+    .container-ne {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 992px) {
-    .container-one {
+    .container-ne {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 1200px) {
-    .container-one {
+    .container-oe {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 1400px) {
-    .container-one {
+    .container-on {
         margin-right: 25px;
         margin-left: 25px;
     }
@@ -117,6 +117,7 @@ header .hidden-el nav ul li a:hover {
         opacity: 0;
         pointer-events: none;
         transition: var(--tran);
+        z-index: 999;
     }
     header .hidden-el:hover nav {
         opacity: 1;
@@ -166,6 +167,8 @@ header .hidden-el nav ul li a:hover {
     position: relative;
     height: 90vh;
     display: flex;
+    justify-content: center;
+    background-color:#e67f0010;
 }
 .parent-one::before {
     content: "";
@@ -175,19 +178,21 @@ header .hidden-el nav ul li a:hover {
     background: url(imgs/patrick-tomasso-NlcCPeKNmwg-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(40%);
+    filter: brightness(20%);
     width: 100%;
     height: 100%;
     z-index: -1;
 }
 .parent-one .container-one {
     display: flex;
-    flex-direction:row-reverse;
     align-items: center;
-    justify-content: space-between;   
 }
 .container-one .text {
     text-align: center;
+    width: 600px;
+}
+.container-one .text h1 span {
+    color: var(--hover-c);
 }
 .container-one .text h1 {
     text-transform: uppercase;
@@ -212,10 +217,46 @@ header .hidden-el nav ul li a:hover {
 .container-one .text a:hover {
     background-color: var(--main-back);
 }
-.container-one .img img {
-    width: 70%;
-    align-content: center;
-    border-radius: 50%;
+
+
+@media (max-width: 767px) {
+    .parent-one .container-one {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .parent-one .container-one {
+        flex-wrap: wrap;
+    }
+    .container-one .text {
+        width: auto;
+    }
+    .container-one .text h1 {
+        font-size: 35px;
+    }
+
 }
-
-
+@media (min-width: 768px) {
+    .parent-one .container-one {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+@media (min-width: 922px) {
+    .parent-one .container-one {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media (min-width: 1200px) {
+    .parent-one .container-one {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+@media (min-width: 1400px) {
+    .parent-one .container-one {
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+}
+/* parent-two */
