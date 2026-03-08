@@ -19,36 +19,31 @@ body {
 }
 /* fresh */
 @media (max-width: 767px) {
-    .containe {
-        margin-top: 25px;
+    .container-one {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 768px) {
-    .containe {
-        margin-top: 25px;
+    .container-one {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 992px) {
-    .containe {
-        margin-top: 25px;
+    .container-one {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 1200px) {
-    .containe {
-        margin-top: 25px;
+    .container-one {
         margin-right: 25px;
         margin-left: 25px;
     }
 }
 @media (min-width: 1400px) {
-    .containe {
-        margin-top: 25px;
+    .container-one {
         margin-right: 25px;
         margin-left: 25px;
     }
@@ -165,3 +160,62 @@ header .hidden-el nav ul li a:hover {
     }
 }
 /* end-header */
+/* start-parent-one */
+
+.parent-one {
+    position: relative;
+    height: 90vh;
+    display: flex;
+}
+.parent-one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(imgs/patrick-tomasso-NlcCPeKNmwg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.parent-one .container-one {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    justify-content: space-between;   
+}
+.container-one .text {
+    text-align: center;
+}
+.container-one .text h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.container-one .text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.container-one .text a {
+    text-decoration: none;
+    color: var(--main-c);
+    background-color: transparent;
+    border: var(--main-back) solid 1px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 7px;
+    transition: var(--tran);
+}
+.container-one .text a:hover {
+    background-color: var(--main-back);
+}
+.container-one .img img {
+    width: 70%;
+    align-content: center;
+    border-radius: 50%;
+}
+
+
