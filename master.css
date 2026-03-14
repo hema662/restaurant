@@ -480,6 +480,7 @@ header .hidden-el nav ul li a:hover {
 .container-four .button {
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 .container-four .button a {
     text-decoration: none;
@@ -499,15 +500,78 @@ header .hidden-el nav ul li a:hover {
         flex-wrap: wrap;
     }
 }
-@media (min-width: 768px) {
-    
+
+/* parent-four */
+
+.container-five {
+    background-color: black;
 }
-@media (min-width: 922px) {
-    
+.container-five form {
+    display: flex;
+    justify-content: space-between;
 }
-@media (min-width: 1200px) {
-    
+.container-five form .left {
+    position: relative;
+    width: 100%;
+    padding-bottom: 30px;
 }
-@media (min-width: 1400px) {
-    
+.container-five form .left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-five form .left .part .text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container-five form .left .part .num,
+.container-five form .left .part .email {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--third-back);
+    color: var(--second-c);
+    height: 50px;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: none;
+}
+.container-five form .left .part {
+    text-align: center;
+}
+.container-five form .left .part i {
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.container-five form .left .part .num i,
+.container-five form .left .part .email i {
+    color: var(--main-back);
+    animation-name: tel;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.container-five form .left .part .num a,
+.container-five form .left .part .email a {
+    padding: 15px;
+}
+.container-five form .right {
+    width: 100%;
+}
+
+
+@keyframes tel {
+    to {
+        transform: translateY(-5px);
+    }
+}
+@keyframes arrow {
+    to {
+        transform: translateY(35px);
+    }
 }
