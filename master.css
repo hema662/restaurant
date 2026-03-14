@@ -22,7 +22,8 @@ body {
 /* fresh */
 @media (max-width: 767px) {
     .container-two,
-    .container-three {
+    .container-three,
+    .container-four {
         padding-top: 50px;
         margin-right: 30px;
         margin-left: 30px;
@@ -31,7 +32,8 @@ body {
 }
 @media (min-width: 768px) {
     .container-two,
-    .container-three {
+    .container-three,
+    .container-four {
         padding-top: 50px;
         margin-right: 30px;
         margin-left: 30px;
@@ -40,7 +42,8 @@ body {
 }
 @media (min-width: 992px) {
     .container-two,
-    .container-three {
+    .container-three,
+    .container-four {
         padding-top: 50px;
         margin-right: 50px;
         margin-left: 50px;
@@ -49,7 +52,8 @@ body {
 }
 @media (min-width: 1200px) {
     .container-two,
-    .container-three {
+    .container-three,
+    .container-four {
         padding-top: 50px;
         margin-right: 50px;
         margin-left: 50px;
@@ -58,7 +62,8 @@ body {
 }
 @media (min-width: 1400px) {
     .container-two,
-    .container-three {
+    .container-three,
+    .container-four {
         padding-top: 50px;
         margin-right: 100px;
         margin-left: 100px;
@@ -365,6 +370,7 @@ header .hidden-el nav ul li a:hover {
     background-color: var(--third-back);
     margin-left: 1%;
     margin-right: 1%;
+    margin-top: 5%;
     border-radius: 4px;
     overflow: hidden;
     color: var(--second-c);
@@ -427,6 +433,77 @@ header .hidden-el nav ul li a:hover {
     .container-three .box .card {
         width: calc(94% / 3);
     }
+}
+@media (min-width: 1200px) {
+    
+}
+@media (min-width: 1400px) {
+    
+}
+
+/* parent-three */ 
+
+.container-four .box {
+    display: flex;
+    color: var(--second-c);
+    
+}
+.container-four .left-side,
+.container-four .right-side {
+    margin-right: 2%;
+    margin-left: 1%;
+}
+.container-four .left-side .part,
+.container-four .right-side .part {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.container-four .img img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.container-four .left-side .part .text,
+.container-four .right-side .part .text {
+    padding-left: 15px;
+}
+.container-four .left-side .part .text p,
+.container-four .right-side .part .text p {
+    padding-bottom: 10px;
+}
+.container-four .left-side .part .text span,
+.container-four .right-side .part .text span {
+    font-weight: bold;
+}
+.container-four .button {
+    text-align: center;
+    padding-top: 25px;
+}
+.container-four .button a {
+    text-decoration: none;
+    color: var(--second-c);
+    padding: 10px;
+    border: solid 1px var(--main-back);
+    border-radius: 7px;
+    transition: var(--tran);
+}
+.container-four .button a:hover {
+    background-color: var(--main-back);
+    color: var(--main-c);
+}
+
+@media (max-width: 767px) {
+    .container-four .box {
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 922px) {
+    
 }
 @media (min-width: 1200px) {
     
